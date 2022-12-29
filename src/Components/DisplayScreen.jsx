@@ -22,7 +22,7 @@ function DisplayScreen() {
     Stranger Things is the kids friendly Netflix Series which <br/>
     includes supernatural events happening <br/>
      all over the city, El is the kid with superpowers who <br/>
-     fights with the demon along with her friends.
+     fights with the  demon along with her friends.
 </div>
 
 
