@@ -4,7 +4,7 @@ import DisplayScreen from '../Components/DisplayScreen'
 
 function Homescreen() {
   return (
-    <div className="bg-[url('https://wallpaperaccess.com/full/1223720.jpg')]  w-[100rem]">
+    <div className="bg-[url('https://wallpaperaccess.com/full/1223720.jpg')] bg-cover">
         <Navbar/>
         <DisplayScreen />
     </div>
