@@ -8,7 +8,7 @@ function DisplayScreen() {
 <div>
     </div>
 <div className=' text-white  px-10 mt-24'>
-<div className='flex'>
+<div className='flex'> 
 <img className='h-10 w-10 ' src='https://cdn.vox-cdn.com/thumbor/SEEvZdiXcs0CS-YbPj2gm6AJ8qc=/0x0:3151x2048/1400x1400/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png'/>
 <a className='mt-2 '>S  E  R  I  E  S</a>
 </div>
