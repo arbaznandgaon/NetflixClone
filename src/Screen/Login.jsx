@@ -8,7 +8,7 @@ function Login(props) {
    <div className='bg-black'>
      <div className="bg-[url('https://browsecat.art/sites/default/files/netflix-background-128505-385441-537479.png')] 
     h-screen w-[87rem] ml-12 bg-black/900">
-        <div className='flex justify-between px-6 pt-4'>
+        <div className='flex justify-between px-6 pt-4 bg-gradient-to-t from-black'>
             <a className='text-5xl   font-black text-red-600'>NETFLIX</a>  
             <div className='space-x-2 font-bold'>
             <button className='bg-transperant border px-2 py-1 text-white'><LanguageIcon/> English <ArrowDropDownIcon/></button>

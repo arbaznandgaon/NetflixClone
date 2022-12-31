@@ -2,10 +2,32 @@ import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { useState,useEffect } from 'react';
 
 function Navbar() {
+
+const [nav,setNav]= useState(null)
+
+function transition (){
+  if(window.scrollY > 250){
+    setNav(true)
+  }
+  else{
+    setNav(false)
+  }
+}
+
+  useEffect(()=>{
+    window.addEventListener("scroll", transition);
+    return ()=>window.removeEventListener("scroll", transition)
+  },[])
+
+
+
+
   return (
-    <div className='flex justify-between h-20 bg-black  px-16 py-3'>
+   <div className={`${nav ? "fixed" : "relative"} w-full`}>
+     <div className='  flex justify-between h-20 bg-gradient-to-t from-black  px-16 py-3'>
         <a className='text-red-600 text-5xl font-bold'>NETFLIX</a>
         {/* <img className='w-  ' src="img1.png"/> */}
         <div className='text-gray-300 text-xl space-x-4 mt-3 mr-[20rem]'>
@@ -33,6 +55,7 @@ function Navbar() {
 
 
     </div>
+   </div>
   )
 }
 
