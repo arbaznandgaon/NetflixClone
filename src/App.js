@@ -17,7 +17,7 @@ const [user,setUser]= useState(null)
 
 
   return (
-    <div className='w-screen overflow-x-hidden bg-black'>
+    <div className=' bg-black'>
     
       {user? <Homescreen className=" "/> : <Login getin={setUser}/>}
     </div>

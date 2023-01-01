@@ -6,7 +6,7 @@ import { useState,useEffect } from 'react';
 
 function Navbar() {
 
-const [nav,setNav]= useState(null)
+const [nav,setNav]= useState(false)
 
 function transition (){
   if(window.scrollY > 250){

@@ -25,7 +25,7 @@ function DisplayScreen() {
 </div>
 
 
-<div className='mt-12 ml-12 font-bold py-4'>
+{/* <div className='mt-12 ml-12 font-bold py-4'>
         <a className='text-white text-xl'>Top Pics For You</a>
         <div className='mt-2 flex space-x-1'>
             <img className='rounded-lg' src='https://occ-0-448-1009.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e'/>
@@ -35,65 +35,11 @@ function DisplayScreen() {
             <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
 
         </div>
-        <div className='mt-2 flex space-x-1'>
-            <img className='rounded-lg' src='https://occ-0-448-1009.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e'/>
-            <img className='rounded-lg' src='https://occ-0-114-38.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_W2OOOAaJoFLss63EfM5FPtm3HNFx7Q3pNdykUjoRGOr4V4vw-qJ0oOnMp9gTBKKiDgj1YgluUD4OwI_WCjZd1_w_H_Gb-BSi705yEGCWmEhneTHzfiiCbd8H0pedczBeG.jpg?r=7c1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-
-        </div>
-        <div className='mt-2 flex space-x-1'>
-            <img className='rounded-lg' src='https://occ-0-448-1009.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e'/>
-            <img className='rounded-lg' src='https://occ-0-114-38.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_W2OOOAaJoFLss63EfM5FPtm3HNFx7Q3pNdykUjoRGOr4V4vw-qJ0oOnMp9gTBKKiDgj1YgluUD4OwI_WCjZd1_w_H_Gb-BSi705yEGCWmEhneTHzfiiCbd8H0pedczBeG.jpg?r=7c1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-
-        </div>
-        <div className='mt-2 flex space-x-1'>
-            <img className='rounded-lg' src='https://occ-0-448-1009.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e'/>
-            <img className='rounded-lg' src='https://occ-0-114-38.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_W2OOOAaJoFLss63EfM5FPtm3HNFx7Q3pNdykUjoRGOr4V4vw-qJ0oOnMp9gTBKKiDgj1YgluUD4OwI_WCjZd1_w_H_Gb-BSi705yEGCWmEhneTHzfiiCbd8H0pedczBeG.jpg?r=7c1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-
-        </div>
-        <div className='mt-2 flex space-x-1'>
-            <img className='rounded-lg' src='https://occ-0-448-1009.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e'/>
-            <img className='rounded-lg' src='https://occ-0-114-38.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_W2OOOAaJoFLss63EfM5FPtm3HNFx7Q3pNdykUjoRGOr4V4vw-qJ0oOnMp9gTBKKiDgj1YgluUD4OwI_WCjZd1_w_H_Gb-BSi705yEGCWmEhneTHzfiiCbd8H0pedczBeG.jpg?r=7c1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-
-        </div>
-        <div className='mt-2 flex space-x-1'>
-            <img className='rounded-lg' src='https://occ-0-448-1009.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e'/>
-            <img className='rounded-lg' src='https://occ-0-114-38.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_W2OOOAaJoFLss63EfM5FPtm3HNFx7Q3pNdykUjoRGOr4V4vw-qJ0oOnMp9gTBKKiDgj1YgluUD4OwI_WCjZd1_w_H_Gb-BSi705yEGCWmEhneTHzfiiCbd8H0pedczBeG.jpg?r=7c1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-
-        </div>
-        <div className='mt-2 flex space-x-1'>
-            <img className='rounded-lg' src='https://occ-0-448-1009.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e'/>
-            <img className='rounded-lg' src='https://occ-0-114-38.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_W2OOOAaJoFLss63EfM5FPtm3HNFx7Q3pNdykUjoRGOr4V4vw-qJ0oOnMp9gTBKKiDgj1YgluUD4OwI_WCjZd1_w_H_Gb-BSi705yEGCWmEhneTHzfiiCbd8H0pedczBeG.jpg?r=7c1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-
-        </div>
-        <div className='mt-2 flex space-x-1'>
-            <img className='rounded-lg' src='https://occ-0-448-1009.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcL5jLOTAi6HXLNlsRDzpf7v08IAzrUNZrAnCbLWgI9pl9--18vxOC0c1HUa-_juV6tdkUCyaNltNHvRw1cjSsoSE8fATn0ATFW2Q9vQltY6Ffnf2BlQhxpAB6wSaf7_9nLp.jpg?r=c0e'/>
-            <img className='rounded-lg' src='https://occ-0-114-38.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbMrQ93yuhpL5LITyev8yVgyRiqdF8maKzQbk4CX7tOPN_tidEVSgriNku_RON0maXtrwK8nkIraybeNCdvYQViNFWGi8K_fjszvjC7_PqbZAfPUkibY38tdgEXVSpqWbKqI.jpg?r=2f1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_W2OOOAaJoFLss63EfM5FPtm3HNFx7Q3pNdykUjoRGOr4V4vw-qJ0oOnMp9gTBKKiDgj1YgluUD4OwI_WCjZd1_w_H_Gb-BSi705yEGCWmEhneTHzfiiCbd8H0pedczBeG.jpg?r=7c1'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-            <img className='rounded-lg' src='https://occ-0-1567-784.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABchTL1DU6gYTQB_c0n6VXoi9F9GZZE_aXQqkbCTJWMrkn0yHkqTjxFpn_yZv3koybjIkjVSdy9Rbff4m3CppXNQP-8GmEl6lou_383Zq5UUMoUyZvX9rwsvQxIjNtzZW4397.jpg?r=751'/>
-
-        </div>
+       
+      
         
         
-      </div>
+      </div> */}
     </div>
   )
 }
