@@ -58,7 +58,7 @@ function truncate(description , n){
         fights with the demon along with her friends.
       </div>
 
-      <div className="mt-12 ml-12 font-bold py-4">
+      <div className="mt-12 px-8 font-bold py-4">
         <a className="text-white text-xl">Top Pics For You</a>
         {/* <div className="mt-2 flex space-x-1">
           <img

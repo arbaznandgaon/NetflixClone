@@ -45,7 +45,7 @@ function Login(props) {
             />
             <button
               onClick={props.getin}
-              className="bg-red-600 px-8 py-4 text-2xl mt- text-white font-"
+              className="bg-red-600 px-8 py-4 text-2xl mt- text-white font-black"
             >
               Get Started <ArrowForwardIosIcon />
             </button>
