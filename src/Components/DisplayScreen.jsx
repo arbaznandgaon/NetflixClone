@@ -4,20 +4,27 @@ import AddIcon from "@mui/icons-material/Add";
 import axios from "../axios"
 import { useState } from "react";
 import { useEffect } from "react" ;
+import requests from "../Requests"
 
 function DisplayScreen() {
 
 const [movies, setMovies]= useState(null)
 
-useEffect(()=>{
-  async function fetchData(){
-    const result= await axios.get();
-    setMovies(
-      result[Math.floor(Math.random()*result.length-1)]
-    )
-  }
-  fetchData()
-},[])
+
+const base_url = "https://image.tmdb.org/t/p/original";
+  useEffect(()=>{
+    async function fetchData(){
+      await axios.get(requests.fetchNetflixOriginals)
+      .then(response => {
+        setMovies(response.data.results[Math.floor(Math.random() * (response.data.results.length -1))])
+      }).catch(err => console.log(err))
+      
+    }
+
+    fetchData() ;
+  },[])
+
+
 
 function truncate(description , n){
   return description?.length > n ? description.substr(0,n) : description ;
