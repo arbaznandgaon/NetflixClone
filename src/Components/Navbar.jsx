@@ -21,8 +21,8 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={`${nav ? "fixed" : "relative"} w-full`}>
-      <div className="  flex justify-between h-20 bg-gradient-to-t from-black  px-16 py-3">
+    <div className={`${nav ? "fixed bg-gradient-to-t from-black via-transparent to-black" : "relative bg-black"} w-full`}>
+      <div className=" flex justify-between h-20  px-16 py-3">
         {/* <a className='text-red-600 text-5xl font-bold'>NETFLIX</a> */}
         <img className="w-40  " src="/images/img1.png" />
         <div className="text-gray-300 text-xl space-x-4 mt-3 mr-[20rem]">

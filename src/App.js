@@ -8,7 +8,7 @@ function App() {
   const [user, setUser] = useState(null);
 
   return (
-    <div className=" bg-black">
+    <div className="">
       {user ? <Homescreen className=" " /> : <Login getin={setUser} />}
     </div>
   );

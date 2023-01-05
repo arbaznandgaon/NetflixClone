@@ -24,11 +24,11 @@ useEffect(()=>{axios.get('https://api.themoviedb.org/3/movie/550?api_key=50417cb
 
 
   return (
-    <div className="bg-[url('https://wallpaperaccess.com/full/1223720.jpg')] bg-cover h-screen ">
+    <div >
       <Navbar className="" />
       <DisplayScreen className="" />
       <div className="px-6 bg-black">
-        <Row title={"Netflix Orignals"} fetchUrl={requests.fetchNetflixOriginals} />
+        <Row title={"Netflix Orignals"} fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
         <Row title={"Trending"} fetchUrl={requests.fetchTrending}/>
         <Row title={"Top Rated"} fetchUrl={requests.fetchNetflixOriginals}/>
         <Row title={"Action"} fetchUrl={requests.fetchActionMovies}/>
