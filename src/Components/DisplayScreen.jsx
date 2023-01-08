@@ -54,7 +54,7 @@ console.log(movies)
       <div className="mt-2 font-bold space-x-2 ">
         <button className="bg-white px-5 py-1 ml-12 ">
           {" "}
-          <PlayArrowIcon />
+          <PlayArrowIcon  />
           Play
         </button>
         <button className="bg-gray-500 text-white px-5 py-1">
