@@ -1,58 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import LanguageIcon from "@mui/icons-material/Language";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import CheckBoxTwoToneIcon from '@mui/icons-material/CheckBoxTwoTone';
 
-function Login(props) {
+
+function Login({Cred,SCred,handle}) {
+
+const [signup,setSignUp]= useState(null)
+
+function handleChange(e){
+const {name,value}=e.target;
+SCred(prev =>({...prev,[name] : value}))
+}
+
+
   return (
-    <div>
+    <div className="bg-black">
       <div
         className="bg-[url('https://browsecat.art/sites/default/files/netflix-background-128505-385441-537479.png')] 
     h-screen w-[87rem] ml-12 "
       >
         <div className="bg-gradient-to-t from-black via-transparent to-black h-screen">
           <div className="flex justify-between px-6 pt-4 bg-gradient-to-t from-black ">
-            {/* <a className='text-5xl   font-black text-red-600'>NETFLIX</a>   */}
+           
             <img className="w-40  " src="/images/img1.png" />
             <div className="space-x-2 font-bold">
-              <button className="bg-transperant border px-2 py-1 text-white">
+              <button  className="bg-transperant border px-2 py-1 text-white">
                 <LanguageIcon /> English <ArrowDropDownIcon />
               </button>
-              <button className="bg-red-600 px-4 py-2 rounded-sm">
-                SignIn
-              </button>
+              
             </div>
           </div>
-          <div className="flex justify-center mt-40">
-            <a className="text-white text-6xl font-black">
-              {" "}
-              Unlimited movies, TV <br />
-              <a className="ml-12">shows and more.</a>
-              <br />
-              <a className="text-xl font-semibold ml-40">
-                Watch anywhere, Cancel anytime.
-              </a>
-            </a>
-          </div>
-          <a className="mt-4 text-lg font-semibold flex justify-center text-white">
-            Ready to watch? Enter your Email to create or Restart your
-            membership.
-          </a>
-          <div className="mt-4">
-            <input
-              placeholder="Email address"
-              className="pl-1 ml-[22rem] h-16 w-1/3 mt-"
-            />
-            <button
-              onClick={props.getin}
-              className="bg-red-600 px-8 py-4 text-2xl mt- text-white font-black"
-            >
-              Get Started <ArrowForwardIosIcon />
-            </button>
+          <div className='bg-black/80 h-auto mt-10 w-[28rem] mx-auto px-12 py-12 space-y-8 rounded-lg'>
+         <p className='text-white font-bold text-2xl'>{signup ? "Sign Up" : "Sign In"}</p>
+         <input onChange={handleChange} name="email" value={Cred.email} type='email' placeholder='Email or Phone Number' className='text-slate-400 font-semibold bg-zinc-700 px-4 py-2 rounded-md w-[22rem]'/>
+         <input onChange={handleChange} name="pass" value={Cred.pass} type='password' placeholder='Password' className='text-slate-400 font-semibold bg-zinc-700 px-4 py-2 rounded-md w-[22rem]'/>
+          <div className='flex flex-col space-y-2 text-gray-600'>
+            <button onClick={()=>{signup ? handle.createUser() : handle.loginUser()}} className='text-white bg-red-600 px-4 py-3 rounded-md w-[22rem] font-bold'>Sign In</button>
+            <div className='flex justify-between text-xs text-slate-300'>
+                <p><CheckBoxTwoToneIcon/> Remember Me </p>
+                <p>Need Help</p>
+            </div>
+            </div>
+             
+             <div className='text-slate-500 space-y-2 pt-4 font-semibold'>
+                <p>{signup ? "Already have an account ? " : "New to Netflix ? "} <button onClick={()=>setSignUp(!signup)} className="text-white hover:underline cursor-pointer">{signup ? "Sign In" : "Sign Up"}</button></p>
+                <p>This page is protected by Google <br/>reCaptche to ensure you are not a bot.<br/><span className='text-blue-800'>Learn More</span></p>
+             </div>
+       </div>
+         
+           
           </div>
         </div>
       </div>
-    </div>
+  
   );
 }
 
