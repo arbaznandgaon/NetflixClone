@@ -8,8 +8,10 @@ import requestss from "../Requests";
 
 function DisplayScreen() {
   const [movies, setMovies] = useState(null);
+  const authcheck= "thisismyuniquekey";
+ const base_url = "https://image.tmdb.org/t/p/original";
 
-  const base_url = "https://image.tmdb.org/t/p/original";
+
   useEffect(() => {
     async function fetchData() {
       await axios
@@ -54,11 +56,11 @@ function DisplayScreen() {
           <a className="text-5xl font-black font-serif ">{movies?.name}</a>
         </div>
         <div className="mt-2 font-bold space-x-2 ">
-          <button className="bg-white px-5 py-1 ml-12 ">
+          <a href={`/watch/${movies?.id}/${authcheck}`} className="bg-white px-5 py-1 ml-12 ">
             {" "}
             <PlayArrowIcon />
             Play
-          </button>
+          </a>
           <button className="bg-gray-500 text-white px-5 py-1">
             <AddIcon /> My List
           </button>
