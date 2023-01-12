@@ -42,9 +42,9 @@ function DisplayScreen() {
       style={{
         backgroundImage: ` url('${base_url + movies?.backdrop_path}') `,
       }}
-      className=" bg-no-repeat bg-cover bg-center "
+      className=" bg-no-repeat bg-cover bg-center w-full "
     >
-      <div className=" bg-gradient-to-t from-black  ">
+      <div className="h-[450px] bg-gradient-to-t from-black  ">
         <div className=" text-white  px-10 pt-24">
           <div className="flex">
             <img

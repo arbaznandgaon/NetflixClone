@@ -8,6 +8,7 @@ import { getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword} fr
 import app from "./Firebase"
 import { async } from "@firebase/util";
 import WatchMovie from "./Screen/WatchMovie";
+import prac1 from "./Components/prac1"
 // import { redirect } from "react-router-dom";
 
 
@@ -61,10 +62,9 @@ const loginUser=async () =>{
   <Route path="/watch/:movie_id/:auth" element={<WatchMovie/>}/>
   <Route path="/" element={user ? <Homescreen/> : <Login handle={{createUser,loginUser}} Cred={cred} SCred={setCred}/>}/>
   <Route path="/login" element={<Login  Cred={setCred}/>}/>
-
+  <prac1/> 
 </Routes>
-
-    </div>
+   </div>
   );
 }
 
