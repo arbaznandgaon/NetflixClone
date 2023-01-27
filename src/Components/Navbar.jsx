@@ -24,9 +24,9 @@ function Navbar() {
     <div
       className={`${
         nav
-          ? "fixed bg-gradient-to-l from-black via-transparent to-black"
-          : "relative bg-gradient-to-l from-black via-transparent to-black"
-      } w-full`}
+          ? " bg-gradient-to-l from-black via-transparent to-black"
+          : " bg-gradient-to-l from-black via-transparent to-black"
+      } w-full fixed`}
     >
       <div className=" flex justify-between h-20  px-16 py-3">
         {/* <a className='text-red-600 text-5xl font-bold'>NETFLIX</a> */}

@@ -35,7 +35,7 @@ function WatchMovie() {
   <source src={`https://www.youtube.com/watch?v=${video[0]?.key}`} type="video/mp4"/>
    Your browser does not support the video tag.
 </video>
-          </div> : <h1 className='text-white font-semibold text-center'>No videos found</h1>
+          </div> : <h1 className='text-white font-semibold text-center '>No videos found</h1>
         }
     </div>
   )
