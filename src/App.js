@@ -7,18 +7,18 @@ import { Route,Routes } from "react-router";
 import { getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword} from "firebase/auth";
 import app from "./Firebase"
 import { async } from "@firebase/util";
-import WatchMovie from "./Screen/WatchMovie";
+import WatchMovie from "./Screen/WatchMovie" ;
 // import { redirect } from "react-router-dom";
 
 
 function App() {
 
-  const auth = getAuth(app);
+  const auth = getAuth(app) ;
 
 
   const schema={email:"" , pass:""}
-  const [cred, setCred] = useState(schema);
-  const [user, setUser] = useState(null);
+  const [cred, setCred] = useState(schema) ;
+  const [user, setUser] = useState(null) ;
 
 const createUser=async () =>{
    await createUserWithEmailAndPassword(auth, cred.email, cred.pass)

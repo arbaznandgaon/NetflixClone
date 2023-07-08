@@ -44,7 +44,7 @@ function DisplayScreen() {
       }}
       className=" bg-no-repeat bg-cover bg-center w-full "
     >
-      <div className="h-[450px] bg-gradient-to-t from-black  ">
+      <div className="h-[450px] bg-gradient-to-t from-black"> 
         <div className=" text-white  px-10 pt-24">
           <div className="flex">
             <img
